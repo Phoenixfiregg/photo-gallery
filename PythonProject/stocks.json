@@ -1,0 +1,26 @@
+{
+  "AAPL": {
+    "current_price": 257.46,
+    "previous_price": 257.46,
+    "history": [
+      257.46,
+      257.46
+    ]
+  },
+  "NVDA": {
+    "current_price": 177.82,
+    "previous_price": 177.82,
+    "history": [
+      177.82,
+      177.82
+    ]
+  },
+  "AMZN": {
+    "current_price": 213.21,
+    "previous_price": 213.21,
+    "history": [
+      213.21,
+      213.21
+    ]
+  }
+}

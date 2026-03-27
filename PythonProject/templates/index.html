@@ -1,0 +1,22 @@
+{% for image in images %}
+    <img src="/uploads/{{ image }}">
+{% endfor %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% for image in images %}
+        <img src="/uploads/{{ image }}">
+    {% endfor %}
+
+</body>
+</html>
