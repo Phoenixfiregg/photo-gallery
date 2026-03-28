@@ -14,7 +14,10 @@ def upload():
     file = request.files["file"]
     file.save(os.path.join(app.config["UPLOAD_FOLDER"], file.filename))
     return redirect("/")
-
+@app.route("/delete/<filename>")
+def delete(filename):
+    os.remove(os.path.join(app.config["UPLOAD_FOLDER"], filename))
+    return redirect("/")
 @app.route("/uploads/<filename>")
 def uploaded_file(filename):
     return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
